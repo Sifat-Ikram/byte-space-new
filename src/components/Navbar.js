@@ -13,21 +13,25 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className="absolute left-0 top-0 z-30 w-full"
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+      <nav className="mx-auto flex max-w-[1200px] items-center justify-between px-5 py-6 sm:px-8">
         <Logo />
-        <ul className="hidden items-center gap-8 text-xs text-white md:flex">
+        <ul className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-10 text-sm font-medium text-white md:flex">
           {links.map((l) => (
             <li key={l}>
-              <a href="#" className="hover:text-[#c8f31d]">
+              <a href="#" className="transition hover:text-[#c8f31d]">
                 {l}
               </a>
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-5 text-xs text-white">
-          <a href="#">Sign in</a>
-          <a href="#">Join Us</a>
-          <FiShoppingBag />
+        <div className="flex items-center gap-6 text-sm font-medium text-white">
+          <a href="#" className="hover:text-[#c8f31d]">
+            Sign in
+          </a>
+          <a href="#" className="hover:text-[#c8f31d]">
+            Join Us
+          </a>
+          <FiShoppingBag size={18} />
         </div>
       </nav>
     </motion.header>
