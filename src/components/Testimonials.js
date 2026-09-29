@@ -22,13 +22,16 @@ const items = [
 
 export default function Testimonials() {
   return (
-    <section className="relative bg-gradient-to-b from-white to-[#f4f6ff] py-20">
-      <div className="mx-auto max-w-5xl px-6">
-        <div className="grid items-center gap-6 md:grid-cols-2">
-          <h2 className="text-3xl font-semibold leading-snug">
+    <section className="relative overflow-hidden bg-white py-24 md:py-28">
+      <div className="pointer-events-none absolute -right-32 top-0 h-[420px] w-[520px] rounded-full bg-[#d6f74f]/40 blur-[120px]" />
+      <div className="pointer-events-none absolute -left-32 bottom-0 h-[420px] w-[420px] rounded-full bg-[#9db0ff]/30 blur-[120px]" />
+
+      <div className="relative mx-auto max-w-[1200px] px-5 sm:px-8">
+        <div className="grid items-center gap-8 md:grid-cols-2">
+          <h2 className="text-3xl font-semibold leading-tight sm:text-4xl md:text-[44px]">
             Discover What Our <br /> Community Is Saying
           </h2>
-          <p className="text-[10px] leading-relaxed text-gray-500">
+          <p className="text-sm leading-relaxed text-gray-500 sm:text-base">
             At ByteSpace, our vibrant community of learners and creators is at
             the heart of what we do. Hear directly from those who have
             experienced the transformative journey of learning and creating on
@@ -37,7 +40,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
           {items.map((t, i) => (
             <motion.div
               key={t.name}
@@ -45,12 +48,14 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`rounded-2xl bg-white p-5 shadow-sm ${i === 1 ? "md:mt-6" : ""}`}
+              className={`rounded-3xl bg-white p-7 shadow-[0_8px_30px_rgba(23,57,232,0.08)] ${
+                i === 1 ? "md:mt-8" : ""
+              }`}
             >
-              <Placeholder label="" className="h-9 w-9 rounded-full" />
-              <p className="mt-3 text-sm font-semibold">{t.name}</p>
-              <p className="text-[10px] text-[#1739e8]">{t.role}</p>
-              <p className="mt-3 text-[10px] leading-relaxed text-gray-500">
+              <Placeholder label="" className="h-14 w-14 rounded-full" />
+              <p className="mt-5 text-lg font-semibold">{t.name}</p>
+              <p className="text-sm text-[#1739e8]">{t.role}</p>
+              <p className="mt-4 text-sm leading-relaxed text-gray-500">
                 &ldquo;{t.text}&rdquo;
               </p>
             </motion.div>

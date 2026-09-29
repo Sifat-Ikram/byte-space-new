@@ -8,36 +8,36 @@ const cols = [
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
-      <div className="mx-auto max-w-5xl px-6 py-14">
-        <div className="grid gap-10 md:grid-cols-[1.3fr_2fr]">
+    <footer className="border-t border-gray-100 bg-white">
+      <div className="mx-auto max-w-[1200px] px-5 py-16 sm:px-8">
+        <div className="grid gap-12 md:grid-cols-[1.2fr_2fr]">
           <div>
             <Logo dark />
-            <p className="mt-3 max-w-[220px] text-[9px] text-gray-500">
+            <p className="mt-4 max-w-[280px] text-sm leading-relaxed text-gray-500">
               Stay Up to date with our latest features and releases by joining
               our newsletter.
             </p>
-            <div className="mt-3 flex max-w-[260px] items-center gap-2">
+            <div className="mt-4 flex max-w-[340px] items-center gap-2">
               <input
                 placeholder="Enter your email"
-                className="flex-1 rounded-full border border-gray-200 px-3 py-2 text-[10px] outline-none focus:border-[#1739e8]"
+                className="min-w-0 flex-1 rounded-full border border-gray-200 px-4 py-2.5 text-sm outline-none focus:border-[#1739e8]"
               />
-              <button className="rounded-full bg-[#c8f31d] px-4 py-2 text-[10px] font-medium">
+              <button className="rounded-full bg-[#c8f31d] px-5 py-2.5 text-sm font-semibold text-[#0b0b2b]">
                 Search
               </button>
             </div>
-            <p className="mt-2 max-w-[240px] text-[8px] text-gray-400">
+            <p className="mt-3 max-w-[320px] text-xs leading-relaxed text-gray-400">
               By subscribing, you agree to our Privacy Policy and consent to
               receive updates from our company.
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
             {cols.map((col, i) => (
-              <ul key={i} className="space-y-3 text-[10px] text-gray-600">
+              <ul key={i} className="space-y-4 text-sm text-gray-600">
                 {col.map((l) => (
                   <li key={l}>
-                    <a href="#" className="hover:text-[#1739e8]">
+                    <a href="#" className="transition hover:text-[#1739e8]">
                       {l}
                     </a>
                   </li>
@@ -47,9 +47,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-gray-200 pt-4 text-[8px] text-gray-500">
+        <div className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t border-gray-200 pt-6 text-xs text-gray-500">
           <p>© 2023 ByteSpace. All rights reserved.</p>
-          <div className="flex gap-5">
+          <div className="flex gap-6">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
             <a href="#">Cookies Settings</a>
