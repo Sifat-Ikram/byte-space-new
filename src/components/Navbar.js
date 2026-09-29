@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
-import { FiShoppingBag } from "react-icons/fi";
 import Logo from "./Logo";
+import Image from "next/image";
+import bag from "@/assets/bag.png";
 
 const links = ["Home", "Courses", "Creators"];
 
@@ -13,25 +14,21 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className="absolute left-0 top-0 z-30 w-full"
     >
-      <nav className="mx-auto flex max-w-[1200px] items-center justify-between px-5 py-6 sm:px-8">
+      <nav className="mx-auto flex max-w-300 items-center justify-between px-5 py-6 sm:px-8">
         <Logo />
-        <ul className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-10 text-sm font-medium text-white md:flex">
+        <ul className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-10 text-[#CED0D3] text-base font-normal md:flex">
           {links.map((l) => (
-            <li key={l}>
-              <a href="#" className="transition hover:text-[#c8f31d]">
-                {l}
-              </a>
-            </li>
+            <li key={l}>{l}</li>
           ))}
         </ul>
-        <div className="flex items-center gap-6 text-sm font-medium text-white">
-          <a href="#" className="hover:text-[#c8f31d]">
+        <div className="flex items-center gap-6 text-base font-normal text-[#CED0D3]">
+          <a href="#">
             Sign in
           </a>
-          <a href="#" className="hover:text-[#c8f31d]">
+          <a href="#">
             Join Us
           </a>
-          <FiShoppingBag size={18} />
+          <Image src={bag} alt="bag" width={16} height={20} />
         </div>
       </nav>
     </motion.header>
