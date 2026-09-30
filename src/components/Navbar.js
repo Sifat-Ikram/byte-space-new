@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Logo from "./Logo";
 import Image from "next/image";
 import bag from "@/assets/bag.png";
+import Link from "next/link";
 
 const links = ["Home", "Courses", "Creators"];
 
@@ -22,12 +23,8 @@ export default function Navbar() {
           ))}
         </ul>
         <div className="flex items-center gap-6 text-base font-normal text-[#CED0D3]">
-          <a href="#">
-            Sign in
-          </a>
-          <a href="#">
-            Join Us
-          </a>
+          <Link href="/login">Sign in</Link>
+          <Link href="/login">Join Us</Link>
           <Image src={bag} alt="bag" width={16} height={20} />
         </div>
       </nav>
