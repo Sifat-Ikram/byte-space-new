@@ -10,7 +10,8 @@ import happy4 from "@/assets/happy4.png";
 import happy5 from "@/assets/happy5.png";
 import happy6 from "@/assets/happy6.png";
 import happy7 from "@/assets/happy7.png";
-// import girl from "@/assets/girl.png";
+import girl from "@/assets/girl.png";
+import manga from "@/assets/manga.png";
 
 const happyImgs = [happy1, happy2, happy3, happy4, happy5, happy6, happy7];
 
@@ -28,21 +29,8 @@ export default function CreateManage() {
       <div className="relative px-5 pb-16 pt-6 sm:px-8 lg:left-1/2 lg:h-[760px] lg:w-[1440px] lg:-translate-x-1/2 lg:p-0">
         {/* ---------- Cluster (left) ---------- */}
         <div className="relative mx-auto -mb-[224px] h-[560px] w-[570px] origin-top scale-[.6] sm:-mb-[84px] sm:scale-[.85] lg:absolute lg:left-[130px] lg:top-[60px] lg:m-0 lg:origin-top-left lg:scale-100">
-          {/* 🔁 REPLACE: girl image (transparent PNG) */}
-          <Placeholder
-            label="Person image"
-            className="absolute left-[38px] top-[10px] z-0 h-[500px] w-[330px] rounded-3xl"
-          />
-          {/* <Image src={girl} alt="" className="absolute left-[38px] top-[10px] z-0 h-auto w-[330px]" /> */}
-
-          {/* 🔁 REPLACE: lime squiggle (girl এর ডানে) */}
-          <Placeholder
-            label="Vector (lime squiggle)"
-            className="absolute left-[445px] top-[281px] z-10 h-[120px] w-[125px] rounded-2xl"
-          />
-
           {/* Total Revenue */}
-          <div className="absolute left-[12px] top-[153px] z-20 w-[190px] rounded-2xl bg-[#1739e8] p-4 text-white shadow-xl">
+          <div className="absolute left-[12px] top-[70px] z-0 w-[232px] h-[119px] rounded-2xl bg-[#1739e8] p-4 text-white shadow-xl">
             <p className="text-xs">Total Revenue</p>
             <p className="text-[10px] text-white/60">July 22</p>
             <p className="mt-1 text-[22px] font-semibold leading-tight">
@@ -54,7 +42,7 @@ export default function CreateManage() {
           </div>
 
           {/* Year to Date */}
-          <div className="absolute left-[12px] top-[245px] z-20 w-[190px] rounded-2xl bg-[#1739e8] p-4 text-white shadow-xl">
+          <div className="absolute left-[12px] top-[210px] z-0 w-[134px] h-[135px] rounded-2xl bg-[#1739e8] p-4 text-white shadow-xl">
             <p className="text-xs">Year to Date</p>
             <p className="text-[10px] text-white/60">2022</p>
             <p className="mt-1 text-[22px] font-semibold leading-tight">
@@ -64,6 +52,20 @@ export default function CreateManage() {
               +12%
             </span>
           </div>
+
+          <Image
+            src={girl}
+            alt="girl"
+            priority
+            className="absolute left-[50px] top-[30px] z-0 h-[596px] w-[500px] rounded-3xl"
+          />
+
+          <Image
+            src={manga}
+            alt="manga"
+            priority
+            className="absolute left-[300px] top-[120px] z-10 h-{216] w-[216px] rounded-2xl"
+          />
 
           {/* Happy Students */}
           <div className="absolute left-[290px] top-[433px] z-20 w-[255px] rounded-2xl bg-white p-4 text-[#0b0b2b] shadow-xl">

@@ -2,8 +2,10 @@
 import { motion } from "framer-motion";
 import { FiBarChart, FiStar } from "react-icons/fi";
 import Placeholder from "./Placeholder";
-// import Image from "next/image";
-// import growthPerson from "@/assets/growthPerson.png";
+import Image from "next/image";
+import course1 from "@/assets/course1.png";
+import heroPerson from "@/assets/heroPerson.png";
+import growthVector from "@/assets/growthVector.png";
 
 const stats = [
   ["12K", "Students"],
@@ -49,11 +51,12 @@ export default function Growth() {
         {/* ---------- Cluster (right) ---------- */}
         <div className="relative mx-auto mt-10 -mb-[216px] h-[540px] w-[560px] origin-top scale-[.6] sm:-mb-[80px] sm:scale-[.85] lg:absolute lg:left-[774px] lg:top-[137px] lg:m-0 lg:origin-top-left lg:scale-100">
           {/* Course card */}
-          <div className="absolute left-0 top-0 z-0 w-[380px] rounded-2xl bg-white p-3 shadow-[0_10px_40px_rgba(0,0,60,0.12)]">
+          <div className="absolute left-0 top-0 z-0 w-[373px] h-[384px] rounded-2xl bg-white p-3 shadow-[0_10px_40px_rgba(0,0,60,0.12)]">
             <div className="relative">
-              {/* 🔁 REPLACE: course photo */}
-              <Placeholder
-                label="Course image"
+              <Image
+                src={course1}
+                alt="course"
+                priority
                 className="h-[190px] rounded-xl"
               />
               <div className="absolute bottom-3 left-3 flex gap-1.5 text-[10px] text-white">
@@ -87,27 +90,27 @@ export default function Growth() {
             </p>
           </div>
 
-          {/* 🔁 REPLACE: person image (transparent PNG) */}
-          <Placeholder
-            label="Person image"
-            className="absolute left-[116px] top-[20px] z-10 h-[520px] w-[420px] rounded-3xl"
-          />
-          {/* <Image src={growthPerson} alt="" className="absolute left-[116px] top-[20px] z-10 h-auto w-[420px]" /> */}
-
-          {/* 🔁 REPLACE: lime squiggle (মাথার ডানে) */}
-          <Placeholder
-            label="Vector (lime squiggle)"
-            className="absolute left-[412px] top-[60px] z-20 h-[173px] w-[127px] rounded-2xl"
+          <Image
+            src={heroPerson}
+            alt="person"
+            priority
+            className="absolute left-[6px] top-[20px] z-10 h-[549px] w-[577px] rounded-3xl"
           />
 
           {/* Learning Progress */}
-          <div className="absolute left-[275px] top-[270px] z-20 w-[205px] rounded-2xl bg-white p-4 shadow-xl">
-            <p className="text-xs text-gray-600">Learning Progress</p>
-            <p className="mt-1 text-[36px] font-semibold leading-none">55%</p>
+          <div className="absolute left-[340px] top-[220px] z-20 w-[232px] h-[138px] rounded-2xl bg-white p-4 shadow-xl">
+            <p className="text-sm font-medium text-gray-600">Learning Progress</p>
+            <p className="mt-1 text-[48px] text-[#242528] font-semibold leading-none">55%</p>
             <div className="mt-3 h-2 w-full rounded-full bg-gray-200">
               <div className="h-full w-[55%] rounded-full bg-[#c8f31d]" />
             </div>
           </div>
+
+          <Image
+            src={growthVector}
+            alt="growthVector"
+            className="absolute left-[412px] top-[80px] z-20 h-[215px] w-[215px] rounded-2xl"
+          />
         </div>
       </div>
     </section>

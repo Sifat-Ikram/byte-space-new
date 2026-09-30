@@ -1,5 +1,12 @@
 import Placeholder from "./Placeholder";
-// import Image from "next/image";
+import Image from "next/image";
+import cta1 from "@/assets/cta1.png";
+import cta2 from "@/assets/cta2.png";
+import cta3 from "@/assets/cta3.png";
+import cta4 from "@/assets/cta4.png";
+import cta5 from "@/assets/cta5.png";
+import cta6 from "@/assets/cta6.png";
+import cta7 from "@/assets/cta7.png";
 
 export default function CreatorCTA() {
   return (
@@ -7,25 +14,25 @@ export default function CreatorCTA() {
       {/* ---------- Vectors (desktop only, 1440px canvas) ---------- */}
       <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-[1440px] -translate-x-1/2 lg:block">
         {/* 🔁 REPLACE 1: উপরে বামে lime squiggle */}
-        <Placeholder label="Vector 1 (lime squiggle)" className="absolute left-0 top-[10px] h-[135px] w-[150px] rounded-2xl" />
+        <Image src={cta1} alt="cta" priority className="absolute left-10 top-0 h-[135px] w-[150px] rounded-2xl" />
 
         {/* 🔁 REPLACE 2: সাদা spiral */}
-        <Placeholder label="Vector 2 (white spiral)" className="absolute left-[230px] top-[40px] h-[85px] w-[80px] rounded-2xl" />
+        <Image src={cta2} alt="cta" priority className="absolute left-[150px] top-[4px] h-[175px] w-[175px] rounded-2xl" />
 
         {/* 🔁 REPLACE 3: উপরে ডানে lime cone */}
-        <Placeholder label="Vector 3 (lime cone)" className="absolute left-[1069px] top-[10px] h-[140px] w-[150px] rounded-2xl" />
+        <Image src={cta5} alt="cta" priority className="absolute left-[1069px] top-[10px] h-[140px] w-[150px] rounded-2xl" />
 
         {/* 🔁 REPLACE 4: ডানে সাদা cylinder (edge এ কাটা) */}
-        <Placeholder label="Vector 4 (white cylinder)" className="absolute left-[1310px] top-[110px] h-[240px] w-[150px] rounded-2xl" />
+        <Image src={cta6} alt="cta" priority className="absolute left-[1170px] top-1 h-[370px] w-[240px] rounded-2xl" />
 
         {/* 🔁 REPLACE 5: বামে নিচে সাদা cone */}
-        <Placeholder label="Vector 5 (white cone)" className="absolute left-0 top-[240px] h-[150px] w-[125px] rounded-2xl" />
+        <Image src={cta3} alt="cta" priority className="absolute left-10 top-[240px] h-[150px] w-[125px] rounded-2xl" />
 
         {/* 🔁 REPLACE 6: নিচে বামে lime squiggle */}
-        <Placeholder label="Vector 6 (lime squiggle)" className="absolute left-[305px] top-[335px] h-[110px] w-[130px] rounded-2xl" />
+        <Image src={cta4} alt="cta" priority className="absolute left-[105px] top-[335px] h-[100px] w-[170px] rounded-2xl" />
 
         {/* 🔁 REPLACE 7: নিচে ডানে lime squiggle */}
-        <Placeholder label="Vector 7 (lime squiggle)" className="absolute left-[1196px] top-[315px] h-[125px] w-[140px] rounded-2xl" />
+        <Image src={cta7} alt="cta" priority className="absolute left-[1196px] top-[315px] h-[330px] w-[330px] rounded-2xl" />
       </div>
 
       {/* ---------- Content ---------- */}

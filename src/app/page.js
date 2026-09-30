@@ -18,10 +18,10 @@ export default function Home() {
       <Discover />
       <Paths />
 
-      {/* ===== Growth + Create&Manage : shared background ===== */}
+   
       <div className="relative overflow-hidden bg-gradient-to-b from-[#fbfcf2] via-[#f6f7fd] to-[#f3f4fc]">
         {/* lime — উপরে বামে/মাঝে */}
-        <div className="pointer-events-none absolute -left-[140px] -top-[170px] h-[420px] w-[900px] rounded-full bg-[#d4fb20]/45 blur-[110px]" />
+        <div className="pointer-events-none absolute left-[220px] -top-[30px] h-[320px] w-[300px] rounded-full bg-[#d4fb20]/45 blur-[110px]" />
         {/* lavender — উপরে ডানে */}
         <div className="pointer-events-none absolute -right-[140px] -top-[20px] h-[440px] w-[620px] rounded-full bg-[#c3ccff]/60 blur-[110px]" />
         {/* blue — Growth এর নিচে বামে */}
@@ -29,7 +29,7 @@ export default function Home() {
         {/* blue — ডানে মাঝে */}
         <div className="pointer-events-none absolute -right-[160px] top-[960px] h-[440px] w-[560px] rounded-full bg-[#b3c0ff]/50 blur-[110px]" />
         {/* lime — নিচে বামে */}
-        <div className="pointer-events-none absolute -bottom-[140px] -left-[140px] h-[440px] w-[720px] rounded-full bg-[#d4fb20]/45 blur-[110px]" />
+        <div className="pointer-events-none absolute bottom-[70px] -left-[10px] h-[200px] w-[200px] rounded-full bg-[#d4fb20]/45 blur-[30px]" />
 
         <div className="relative">
           <Growth />
