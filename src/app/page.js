@@ -29,7 +29,7 @@ export default function Home() {
         {/* blue — ডানে মাঝে */}
         <div className="pointer-events-none absolute -right-[160px] top-[960px] h-[440px] w-[560px] rounded-full bg-[#b3c0ff]/50 blur-[110px]" />
         {/* lime — নিচে বামে */}
-        <div className="pointer-events-none absolute bottom-[70px] -left-[10px] h-[200px] w-[200px] rounded-full bg-[#d4fb20]/45 blur-[30px]" />
+        <div className="pointer-events-none absolute bottom-[70px] left-[30px] h-[200px] w-[200px] rounded-full bg-[#d4fb20]/45 blur-[30px]" />
 
         <div className="relative">
           <Growth />
