@@ -29,10 +29,10 @@ export default function CreatorCTA() {
         <Image src={cta3} alt="cta" priority className="absolute left-10 top-[240px] h-[150px] w-[125px] rounded-2xl" />
 
         {/* 🔁 REPLACE 6: নিচে বামে lime squiggle */}
-        <Image src={cta4} alt="cta" priority className="absolute left-[105px] top-[335px] h-[100px] w-[170px] rounded-2xl" />
+        <Image src={cta4} alt="cta" priority className="absolute left-[95px] top-[315px] h-[100px] w-[190px] rounded-2xl" />
 
         {/* 🔁 REPLACE 7: নিচে ডানে lime squiggle */}
-        <Image src={cta7} alt="cta" priority className="absolute left-[1196px] top-[315px] h-[330px] w-[330px] rounded-2xl" />
+        <Image src={cta7} alt="cta" priority className="absolute left-[1080px] top-[250px] h-[230px] w-[280px] rounded-2xl" />
       </div>
 
       {/* ---------- Content ---------- */}
